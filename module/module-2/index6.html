@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+
+    // Array...
+
+    // cara membbuat array...
+
+    // array literal
+    let fruit = ['apple', 'manggo', 'orange']
+    console.log(fruit)
+
+    // new Array()
+    let people = new Array('zumal', 'clara', 'dila', 'tarisa')
+    console.log(people)
+
+    // mengakses array...
+    console.log(people[0])
+
+    // mengganti atau menambah array dengan index
+    let pacar = ['clara' , 'rinan' , 'tarisa' , 'fatimah']
+
+    pacar[3] = 'icha'
+    pacar[4] = 'dila'
+
+    console.log(pacar)
+
+    // manipulasi array...
+    let teman = ['rama']
+
+    // push : menambahkan item   baru namun akan masuk diurutan paling akhir...
+    teman.push('sindi')
+
+    // unshift : menambahkan item namun akan masuk pada urutan paling pertama..
+    teman.unshift('rasya')
+
+    // pop : menghapus item dari urutan yang paling akhir
+    teman.pop()
+
+    // shift : kebalikan pop
+    teman.shift()
+
+    // hasil...
+    console.log(teman)
+
+    // menggabungkan array...
+    let arr1 = [1,2]
+    let arr2 = [3,4,5,6,7,8]
+    let arr3 = arr1.concat(arr2)
+
+    // hasil...
+    console.log(arr3)
+
+    // slice : untuk mengambil index ditengah-tengah namun tidak menjasi array baru
+    console.log(arr3.slice(1 , 5))
+
+    // splice : bisa menghapus array dari tengah format splice(mulai dari index , berapa item yang ingin dihapus , mau diganti dengan apa (optional))
+    arr3.splice(1,1)
+    console.log(arr3)
+
+  // array  multidimensional...
+  let matrix = [
+    [1,2,3,4,5],
+    [6,7,8,9,10],
+    [11,12,13,14,15,16,17]
+  ]
+  console.log(matrix[2][4])
+
+  // untuk index of tidak hanya berlaku untuk array multi bisa juga array yg tidak multi
+
+  // mencari posisi item
+  console.log(matrix[2].indexOf(13))
+
+  // memeriksa ada tidak suatu item
+  console.log(matrix[2].includes(13))
+
+  </script>
+</body>
+
+</html>

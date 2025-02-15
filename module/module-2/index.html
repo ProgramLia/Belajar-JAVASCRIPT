@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+
+        // String...
+        let nama = 'Zumal'
+        let nama2 = ' Nama Saya Zumal '
+
+        // setiap string punya index dan bisa diakses  
+        console.log(nama[3])
+
+        // gunakan lenght untuk menghitung panjang string atau karakter
+        console.log(nama.length)
+
+        // gunakan toUpperCase untuk membuat string jadi huruf besar...
+        console.log(nama.toUpperCase())
+
+        // gunakan toLowerCase untuk membuat semua huruf jadi kecil
+        console.log(nama.toLowerCase())
+
+        // gunakan trim agar menghilangkan spasi...tapi bukan spasi antar kata...
+        console.log(nama2.trim())
+
+        // gunakan + untuk menggabungkan string atau concat
+        let str1 = 'Hello'
+        let str2 = 'Javascript'
+        console.log(str1 + " " + str2)
+        
+        // anda bisa  gunakn slice misal ingin mengambil sebagian string
+        let str3 = 'Javascript'
+        console.log(str3.slice(0 , 4)) //hasilnya java
+
+        // gunakan replace untuk mengganti string 
+        console.log(str3.replace('script' , ' Pride'))
+
+        // mengubah array jadi string...
+        let arr = ['saya' , 'suka' , 'makan' , 'nasi' , 'goreng'];
+        console.log(arr.join(' '));
+
+        // Buat string jadi array...
+        let str4 = "Hallo Bro Coding yuk!"
+        console.log(str4.split(' '))
+        console.log(str4.includes('Coding'))
+
+        
+
+    </script>
+</body>
+
+</html>

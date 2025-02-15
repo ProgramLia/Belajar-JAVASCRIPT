@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+
+    // pengkondisian...
+
+    // if else statment
+    // if else merupakan pengkondisian dimana jika kondisi di scope if true maka akan dijalankan namun jika false akan beralih ke bagian else
+
+    let value = 70
+    if (value <= 50) {
+      alert('anda tidak lulus')
+    } else {
+      alert('anda lulus')
+    }
+
+    // else if
+    // digunakan saat anda ingin membuat banyak kondisi..
+    if (value <= 50) {
+      alert('anda tidak lulus')
+    } else if (value <= 70) {
+      alert('anda lulus dengan nilai pas')
+    } else {
+      alert('anda lulus')
+    }
+
+    // switch case statment
+    // sama dengan if else namun switch case hanya untuk kondisi yang sederhana , dan switch case mudah dibaca...
+    let day = 2
+    switch (true) {
+      case day == 1:
+        alert('sekarang hari senin');
+        break;
+      case day == 2:
+        alert('sekarang hari Selasa');
+        break;
+      case day == 3:
+        alert('sekarang hari Rabu');
+        break;
+      case day == 4:
+        alert('sekarang hari Kamis');
+        break;
+      case day == 5:
+        alert('sekarang hari Jumat');
+        break;
+      case day == 6:
+        alert('sekarang hari Sabtu');
+        break;
+      case day == 7:
+        alert('sekarang hari Minggu');
+        break;
+    }
+
+
+
+  </script>
+</body>
+
+</html>

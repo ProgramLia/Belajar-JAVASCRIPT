@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // Object...
+    // bagian bagian atau sub judul di object disebut property jika ingin membuat properti dengan 2 kata tambahkan "" / ''
+
+    // membuat object...
+
+    // object literal
+    let buku = {
+      title: 'Prince main',
+      author: 'Raymond  chin',
+      year: '2013'
+    }
+    console.log(buku) 
+
+    // new Object()
+    let buku2 = new Object()
+    buku2.title = 'Ikamasutra'
+    buku2.author = 'Farhan'
+    buku2.year = '2021'
+    buku2["sinopsis"] = 'aksjdsjdsahjdkashjd'
+    console.log(buku2)
+
+
+    // mengakses object...
+
+    // menggunakan kurung siku
+    let buku3 = {
+      title: 'legend',
+      author:'Rizky',
+      year:'2003',
+      "book price" : 120000,
+      'book sinopsis': "lorem5askdhaskjdasjhskajh"
+    }
+
+    // kalau ingin mengakses properti yg dua kata auat lebih harus pakai kurung siku
+
+    // kururng siku
+    console.log(buku3['title'])
+    console.log(buku3['book sinopsis'])
+
+    // menggunakan titik...
+    console.log(buku3.title)
+    console.log(buku3.year)
+    console.log(buku3['book price'])
+
+    // mengubah dan menambah property
+    buku3["book price"] = 13000
+    buku3['book sinopsis'] = 'hallo'
+    buku3.author = 'zumal'
+    buku3.umur = 22
+    buku3["alamat"] = 'Gg Permai'
+
+    // menghapus property..
+    delete buku3.alamat
+
+    // hasil
+    console.log(buku3)
+
+    // nested object...
+    let mhs = {
+      nama:'zumal',
+      ipk: {
+        fisika: 3.98,
+        mtk: 4,
+        pai:4,
+      },
+      usia:22
+    }
+    console.log(mhs.ipk.fisika)
+
+    // destructurig...
+    // digunakan agar memudahkan dalam mengakses property
+    let {fisika , mtk , pai } = mhs.ipk
+    console.log(mtk)
+    
+
+  </script>
+</body>
+
+</html>

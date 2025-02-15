@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Number...
+    var bilangaBulat = 23
+    var bilanganPecahan = 23.5
+    var bilanganNegatif = -90 
+    var invinityValue = Infinity
+    var notANumber = NaN   
+
+    //  nilai maximal dari Number
+    console.log(Number.MAX_VALUE)
+
+    // nilai minimun dari Number
+    console.log(Number.MIN_VALUE)
+
+    // mengubah angka menjadi string...
+    let num = 100.6
+    let str = num.toString()
+    console.log(str + "|" + typeof str)
+
+    // untuk menentukan berapa angka dibelakang koma namun untuk selebihnya akan dibulatkan 
+    let num2 = 3.1476876876876877
+    console.log(num2.toFixed(2))
+
+    // untuk mengubah string jadi angka
+    let num3 = "100.566"
+
+    // ParseInt harus bilangan bulat jika ada karakter selain angka (huruf/dsb) maka akan diabaikn angakn setelah huruf 
+    console.log(parseInt(num3))
+
+    // ParseFloat bisa untuk bilangan decimal klau ada karakter selain angka (huruf/dsb) maka akan diabaikn angakn setelah huruf 
+    console.log(parseFloat(num3))
+
+    // Number bisa untuk bilangan decimal dab bulat namun jika ada karakter selain angka maka dia aka jadi nan
+    console.log(Number(num3))
+    
+
+  </script>
+</body>
+</html>

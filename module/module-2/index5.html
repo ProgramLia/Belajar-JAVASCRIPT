@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // Date Object
+    // untuk bekerja dengan tanggal dan waktu kita dapat memanipulasi tanggal dan waktu
+
+    // untuk mendapatkan tanggal dan waktu saat ini
+    let now = new Date()
+    console.log(now)
+
+    // bisa juga menambahkan waktu yang diinginkan new Date("august 20, 2025 10:11:00") harus menggunakan bahasa inggris klo nama bulannya
+    let now2 = new Date("may 20, 2027 10:11:00")
+    console.log(now2)
+
+    // menggunakan parameter (tahun,bulan,hari,jam,menit,detik) untuk bulan dia mulai dari 0 jadi januari = 0
+    let now3 = new Date(2027, 0, 1, 10, 30, 11)
+    console.log(now3)
+
+    // jika hanya ingin mengambil tahun / bulan / hari / jam / menit / detik /milidetik saja
+    let now4 = new Date()
+
+    // tahun...
+    console.log(now4.getFullYear())
+
+    // bulan...(untuk bilan di javascript januari == 0)
+    console.log(now4.getMonth())
+
+    // hari...
+    console.log(now4.getDay())
+
+    // jam...
+    console.log(now4.getHours())
+
+    // menit...
+    console.log(now4.getMinutes())
+
+    // detik...
+    console.log(now4.getSeconds())
+
+    // milidetik...
+    console.log(now4.getMilliseconds())
+
+    // untuk mengambil jam saat ini namun dimulai dari tahun 1970 dan akan menghasilkan output milidetik
+    console.log(now4.getTime())
+
+    // selanjutnya kita bisa mengatur waktu / tanggal dengan set
+    let now5 = new Date();
+
+    // tahun...
+    now5.setFullYear(2029)
+    
+    // bulan..
+    now5.setMonth(11)
+
+    // hari
+    now5.setDate(31)
+
+    // jam..
+    now5.setHours(18)
+
+    // menit
+    now5.setMinutes(30)
+
+    // detik..
+    now5.setSeconds(50)
+
+    // milidetik
+    now5.setMilliseconds(993)
+
+    // hasil
+    console.log(now5)
+
+    // melakukan perhitungan dengan date
+    let date1 = new Date(2027, 11 , 14 , 10 , 30 , 960)
+    let date2 = new Date(2029 , 0 , 22 , 10 , 30 ,960)
+
+    let diff = date2 - date1
+    let days = diff / (1000 * 3600 * 24)
+    console.log(days)
+
+    // latihan menunjjukan hari saat ini dengan javascript...
+    let data = ['senin' , 'selasa' , 'rabu' , 'kamis' , 'jumat' , 'sabtu' , 'minggu'];
+
+    let now6 = new Date()
+    let days2 = now6.getDay();
+
+    console.log(data[days2 - 1])
+
+  </script>
+</body>
+
+</html>
